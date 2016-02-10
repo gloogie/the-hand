@@ -1,0 +1,35 @@
+<html lang="en" ng-app="terminator" ng-strict-di>
+<head>
+
+
+    <!-- Lib Scripts Dependencies-->
+    <script type='text/javascript' src="assets/lib/angular-common/dist/assets/lib/vendor.min.js"></script>
+    <script type='text/javascript' src="assets/lib/angular-common/dist/app/itesoft.min.js"></script>
+    <link rel="stylesheet" href="assets/lib/angular-common/dist/assets/fonts/itesoft-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/theHand.css"/>
+
+    <!--Module-->
+    <script type="text/javascript" src="app/app.module.js"></script>
+    <script type="text/javascript" src="app/app.route.js"></script>
+
+    <title>The Hand</title>
+
+    <!-- Services -->
+    <script type="text/javascript" src="app/features/config/configService.js"></script>
+    <script type="text/javascript" src="app/common/services/hand.js"></script>
+    <script type="text/javascript" src="app/common/services/step.js"></script>
+    <script type="text/javascript" src="app/common/services/playList.js"></script>
+    <script type="text/javascript" src="app/features/playlist/playListService.js"></script>
+
+    <!-- Directives -->
+    <script type="text/javascript" src="app/common/directives/handDirective.js"></script>
+
+    <!-- Controllers -->
+    <script type="text/javascript" src="app/common/controllers/mainController.js"></script>
+    <script type="text/javascript" src="app/features/config/configController.js"></script>
+    <script type="text/javascript" src="app/features/playlist/playListController.js"></script>
+</head>
+<body>
+<div class="full-height" ng-include="'app/app.template.html'"></div>
+</body>
+</html>

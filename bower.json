@@ -1,0 +1,10 @@
+{
+  "name": "the-terminator",
+  "description": "The Terminator Application",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-common": "https://github.com/alizarion/angular-common.git#gh-pages"
+  }
+}

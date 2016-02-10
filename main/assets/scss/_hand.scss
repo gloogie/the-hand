@@ -1,0 +1,77 @@
+/* Styles go here */
+
+.hand {
+
+}
+
+.hand .finger {
+  float:left;
+  display:inline-block;
+  z-index:100;
+  background-color: #ffcfae;
+
+}
+
+
+.hand .pome{
+
+  z-index: 0;
+  position: absolute;
+  float: left;
+  background-color: #ffcfae;
+
+}
+
+.hand .finger.auriculaire {
+
+}
+
+.hand .finger.ringfinger {
+
+}
+
+.hand .finger .rotation {
+  border-radius :20px;
+  bottom:0;
+  background-color:#000000;
+  height:30px;
+}
+
+.hand .finger .info {
+  text-align: center;
+  color: red;
+}
+
+.hand .finger .info:after {
+  content: "\00b0";
+}
+
+
+.hand .finger.majeure .info {
+
+  padding-top:26%;
+}
+
+.hand .finger .info {
+  color:white;
+  position:absolute;
+  float:left;
+  margin-left :auto;
+  margin-right :auto;
+  font-weight :bolder;
+  padding-top:40%;
+  display:block;
+}
+
+.hand .finger.majeure {
+
+}
+
+
+.hand .finger.index {
+
+}
+
+.hand .finger.thumb {
+
+}

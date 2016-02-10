@@ -1,0 +1,32 @@
+<div ng-controller="MainController" class="full-height">
+    <it-side-menus>
+        <it-side-menu-header it-animate="true"  it-button-menu="true">
+
+        </it-side-menu-header>
+
+        <it-side-menu>
+            <ul it-nav-active="active" class="nav navbar-nav nav-pills nav-stacked list-group">
+
+
+                <li it-collapsed-item=""   >
+                    <a href=""><h7>Menu</h7></a>
+                    <ul  class="nav navbar-nav nav-pills nav-stacked it-menu-animated">
+                        <li>
+                            <a href="#/config">Configuration</a>
+                        </li>
+                        <li>
+                            <a href="#/playlist">Play List</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </it-side-menu>
+
+
+        <it-side-menu-content>
+
+            <div ng-view class="ng-view-class"></div>
+
+        </it-side-menu-content>
+    </it-side-menus>
+</div>

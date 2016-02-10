@@ -1,0 +1,30 @@
+<div class="row">
+    <it-side-panel it-col="2" it-height-mode="full" it-top-position="none" it-icon-class="fa-star-o">
+        <it-side-panel-header>
+            <div class="form-group">
+                <button class="btn btn-primary" ng-click="addNewPlayList()">Add new playlist</button>
+            </div>
+        </it-side-panel-header>
+        <it-side-panel-content>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="playList in playLists">
+                    <a ng-click="editPlayList(playList)">{{playList.playListName}}</a>
+                </li>
+            </ul>
+        </it-side-panel-content>
+        <it-side-panel-footer>
+        </it-side-panel-footer>
+    </it-side-panel>
+    <div class="col-md-12">
+        <div class="row">
+            <button class="btn btn-primary" ng-if="currentPlayList" ng-click="addStep()">Add new step</button>
+            <button class="btn btn-primary" ng-if="currentPlayList" ng-click="save()">Save</button>
+            <button class="btn btn-primary" ng-if="currentPlayList" ng-click="runSteps(currentPlayList)">Run PlayList</button>
+        </div>
+        <span class="col-md-2" ng-repeat="step in currentPlayList.steps">
+                <robot-hand editable="true" hand-model="step.hand" scale="0.3">
+                </robot-hand>
+                <button class="btn btn-primary" ng-click="callAPI(step.hand)">Run step {{step.order}}</button>
+        </span>
+    </div>
+</div>
