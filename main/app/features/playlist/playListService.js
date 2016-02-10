@@ -41,23 +41,7 @@ angular.module('terminator')
             for (var finger in hand) {
                 url += settings.handParams[finger] + '=' + hand[finger] + '&';
             }
-
-            /*if (typeof(hand.thumb) !== 'undefined') {
-                url += settings.handParams.thumb + '=' + hand.thumb + '&';
-            }
-            if (typeof(hand.index) !== 'undefined') {
-                url += settings.handParams.index + '=' + hand.index + '&';
-            }
-            if (typeof(hand.major) !== 'undefined') {
-                url += settings.handParams.major + '=' + hand.major + '&';
-            }
-            if (typeof(hand.ringFinger) !== 'undefined') {
-                url += settings.handParams.ringFinger + '=' + hand.ringFinger + '&';
-            }
-            if (typeof(hand.auricular) !== 'undefined') {
-                url += settings.handParams.auricular + '=' + hand.auricular;
-            }*/
-
+			
             $http.get(url)
                 .then(function(response) {
                 });
