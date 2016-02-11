@@ -24,6 +24,7 @@ var karma = require('gulp-karma');
 var protractor = require('gulp-protractor').protractor;
 var webdriver_standalone = require('gulp-protractor').webdriver_standalone;
 var webdriver_update = require('gulp-protractor').webdriver_update;
+var ghPages = require('gulp-gh-pages');
 
 /**
  * Execute les actions de build dans l'ordre
@@ -368,6 +369,11 @@ gulp.task('serverhttp',function(){
         .pipe(webserver({
             port: 4000
         }));
+});
+
+gulp.task('deploy', function() {
+    return gulp.src('dist/**/*')
+        .pipe(ghPages());
 });
 
 /**
